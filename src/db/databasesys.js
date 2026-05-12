@@ -123,10 +123,11 @@ const dbServices = {
             throw Error("No task ID selected!");
         }
 
-        if (queryData.description.trim() === "") {
-            throw Error("Task description is empty!");
-        }
-
+        if (queryData.description) {
+            if (queryData.description.trim() === "") {
+                throw Error("Task description is empty!");
+            }
+        }    
         const selectedData = this.selectedDB.find(records => records.id === queryData.id);
         if (!selectedData) {
             throw Error(`Could not find data! Did you check if it exists?`)
