@@ -43,8 +43,9 @@ No hidden magic. No unnecessary abstraction.
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/TheElectreKid/TaskTracker.CLI.git
+cd TaskTracker.CLI
+npm install
 node index.js
 
 or
